@@ -39,7 +39,6 @@ formSubmit.addEventListener("submit", async (e) => {
         const filteredData = allUserData.filter((user) => {
             return user.login.toLowerCase().includes(searchData);
         });
-        console.log(filteredData);
         main_container.innerHTML = "";
         if (filteredData.length === 0) {
             main_container?.insertAdjacentHTML("beforeend", `<p class="empty-msg">No matching users found".</p>`);
@@ -52,5 +51,15 @@ formSubmit.addEventListener("submit", async (e) => {
     }
     catch (e) {
         console.error(e);
+    }
+});
+// change Theme
+const themeToggleBtn = document.querySelector('#themeToggle');
+themeToggleBtn.addEventListener('click', () => {
+    if (document.body.className === "light-theme") {
+        document.body.classList.toggle('dark-theme');
+    }
+    else {
+        document.body.classList.toggle('light-theme');
     }
 });

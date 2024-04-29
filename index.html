@@ -6,12 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TS Website</title>
     <script src="./dist/index.js" type="module"></script>
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/light.css">
+    <link rel="stylesheet" href="./css/dark.css">
 </head>
 
-<body>
+<body class="light-theme">
     <div class="search-input">
-        <h1>TYPESCRIPT-PRACTICE</h1>
+        <h1>TS-DEMO</h1>
         <div>
             <form class="form">
                 <input 
@@ -22,6 +23,12 @@
                 />
                 <button>Search</button>
             </form>
+        </div>
+        <div class="toggle-btn">
+            <input type="checkbox" id="checkbox">
+            <label for="toggle-label" class="toggle-label">
+                <span class="toggle-ball"></span>
+            </label>
         </div>
     </div>
 

@@ -4,6 +4,13 @@ const getUsername = document.querySelector("#user") as HTMLInputElement
 const formSubmit = document.querySelector(".form") as HTMLFormElement
 const main_container = document.querySelector(".main_container") as HTMLElement
 
+
+// let theme = localStorage.getItem('Theame-of-TypeScript-project-by-utsav');
+// if (theme === null) {
+//     theme = 'light-theme'; // Default to 'light-theme' if no theme is stored
+// }
+// document.body.classList.toggle(theme)
+
 interface UserData{
     id:number;
     login:string;
@@ -63,7 +70,6 @@ formSubmit.addEventListener("submit",async (e) => {
         const filteredData = allUserData.filter((user:UserData) => {
             return user.login.toLowerCase().includes(searchData);
         });
-        console.log(filteredData)
 
         main_container.innerHTML="";
 
@@ -82,3 +88,15 @@ formSubmit.addEventListener("submit",async (e) => {
         console.error(e)
     }
 })
+
+// change Theme
+
+const themeToggleBtn = document.querySelector('#themeToggle') as HTMLButtonElement;
+themeToggleBtn.addEventListener('click', () => {
+    if(document.body.className === "light-theme"){
+        document.body.classList.toggle('dark-theme');
+    }else{
+        document.body.classList.toggle('light-theme');
+    }
+
+});
