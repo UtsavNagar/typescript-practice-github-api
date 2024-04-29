@@ -1,0 +1,133 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.search-input{
+    height: 80px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: rgba(128, 128, 128, 0.336);
+}
+
+.search-input h1{
+    margin-left: 20px;
+}
+
+.search-input input{
+    border: 0px;
+    box-shadow: 0px 0px 10px rgba(128, 128, 128, 0.267);
+    height: 25px ;
+    padding: 5px;
+    border-radius: 20px;
+    margin-right: 20px;
+    text-align: center;
+    font-size: 15px;
+    color: black;
+    transition: ease 0.3s;
+}
+
+.search-input button{
+    padding: 10px;
+    border-radius: 20px;
+    margin-right: 20px;
+    text-align: center;
+    font-size: 15px;
+    color: black;
+    background:white;
+    transition: ease 0.3s;
+    cursor: pointer;
+}
+
+.search-input button:hover{
+    transform: scale(1.05);
+    background: black;
+    color: white;
+}
+
+input:focus{
+    transform: scale(1.05);
+}
+
+.main_container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8rem;
+    padding: 3rem 0;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.062);
+}
+
+.card{
+    background: white;
+    border: 2px solid black;
+    min-width: 20rem;
+    min-height: 20rem;
+    padding: 1rem;
+    border-radius: calc(1rem + 2px);
+    transition: all 0.3s linear;
+    box-shadow: 0px 0px 15px rgba(128, 128, 128, 0.438);
+
+    &:hover{
+        transform: translateY(-0.5rem);
+        box-shadow: 0.5rem 0.5rem 15px rgba(128, 128, 128, 0.233);
+    }
+}
+
+img{
+    max-width: 100%;
+    width: 22rem;
+    height: auto;
+    border-radius: 1rem;
+}
+
+.username{
+    padding-top:1rem ;
+}
+
+hr{
+    height: 0.01rem;
+    width: 0.1rem solid black;
+}
+
+.card-footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 3rem 0 0 0;
+}
+
+.card-footer img{
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    border: 0.2rem solid black;
+}
+
+.card-footer a{
+    padding: 10px;
+    border-radius: 20px;
+    margin-right: 20px;
+    text-align: center;
+    font-size: 15px;
+    color: black;
+    background:white;
+    transition: ease 0.3s;
+    cursor: pointer;
+    border: 2px solid black;
+    text-decoration: none;
+}
+
+.card-footer a:hover{
+    transform: scale(1.05);
+    background: black;
+    color: white;
+}
+
+.empty-msg{
+    width: 100%;
+    text-align: center;
+    font-size: 2rem;
+}
