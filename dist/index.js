@@ -16,7 +16,6 @@ const createHtmlElementForUser = (currUser) => {
     const { avatar_url, login, url, location } = currUser;
     main_container.insertAdjacentHTML("beforeend", `<div class='card'> 
             <img src="${avatar_url}" alt="${login}"/>
-            <hr/>
             <div class="card-footer">
                 <img src="${avatar_url}" alt="${login}"/>
                 <a target="#" href="${url}">Github</a>

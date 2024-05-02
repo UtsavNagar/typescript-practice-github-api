@@ -5,15 +5,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TS Website</title>
-    <script src="./dist/index.js" type="module"></script>
-    <link rel="stylesheet" href="./css/light.css">
-    <link rel="stylesheet" href="./css/dark.css">
+    <script src="./dist/index.js" type="module" ></script>
+    <link rel="stylesheet" href="./css/light.css" media="(prefers-color-scheme: light)">
+    <link rel="stylesheet" href="./css/dark.css" media="(prefers-color-scheme: dark)">
 </head>
 
-<body class="light-theme">
+<body class="container">
     <div class="search-input">
         <h1>TS-DEMO</h1>
-        <div>
+        <div class="form-area">
             <form class="form">
                 <input 
                     type="text" 
@@ -24,12 +24,11 @@
                 <button>Search</button>
             </form>
         </div>
-        <div class="toggle-btn">
-            <input type="checkbox" id="checkbox">
+        <!-- <div class="toggle-btn">
             <label for="toggle-label" class="toggle-label">
                 <span class="toggle-ball"></span>
             </label>
-        </div>
+        </div> -->
     </div>
 
     <div class="main_container"></div>

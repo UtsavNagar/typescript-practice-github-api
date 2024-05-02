@@ -39,7 +39,6 @@ const createHtmlElementForUser=(currUser:UserData)=>{
         "beforeend",
         `<div class='card'> 
             <img src="${avatar_url}" alt="${login}"/>
-            <hr/>
             <div class="card-footer">
                 <img src="${avatar_url}" alt="${login}"/>
                 <a target="#" href="${url}">Github</a>
