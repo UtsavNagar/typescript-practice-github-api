@@ -1,14 +1,14 @@
-*{
+* {
     margin: 0;
     padding: 0;
 }
 
-.container{
+.container {
     background-color: #333;
     color: white;
 }
 
- .search-input{
+.search-input {
     height: 80px;
     width: 100%;
     display: flex;
@@ -17,14 +17,14 @@
     background: rgba(128, 128, 128, 0.336);
 }
 
- .search-input h1{
+.search-input h1 {
     margin-left: 20px;
 }
 
- .search-input input{
+.search-input input {
     border: 0px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.267);
-    height: 25px ;
+    height: 25px;
     padding: 5px;
     border-radius: 20px;
     margin-right: 20px;
@@ -37,7 +37,7 @@
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.267);
 }
 
- .search-input button{
+.search-input button {
     padding: 10px;
     border-radius: 20px;
     margin-right: 20px;
@@ -50,18 +50,18 @@
     border: 2px solid white;
 }
 
- .search-input button:hover{
+.search-input button:hover {
     transform: scale(1.05);
     background: white;
     color: black;
     border: 2px solid black;
 }
 
- input:focus{
+input:focus {
     transform: scale(1.05);
 }
 
- .main_container{
+.main_container {
     display: flex;
     flex-wrap: wrap;
     gap: 8rem;
@@ -70,7 +70,7 @@
     background: rgba(0, 0, 0, 0.062);
 }
 
- .card{
+.card {
     background: #333;
     color: white;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.267);
@@ -80,43 +80,43 @@
     border-radius: calc(1rem + 2px);
     transition: all 0.3s linear;
 
-    &:hover{
+    &:hover {
         transform: translateY(-0.5rem);
         box-shadow: 0.5rem 0.5rem 15px rgba(0, 0, 0, 0.233);
     }
 }
 
-img{
+img {
     max-width: 100%;
     width: 22rem;
     height: auto;
     border-radius: 1rem;
 }
 
-.username{
-    padding-top:1rem ;
+.username {
+    padding-top: 1rem;
 }
 
- hr{
+hr {
     height: 0rem;
     border: 0.05rem solid white;
 }
 
- .card-footer{
+.card-footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin: 3rem 0 0 0;
 }
 
- .card-footer img{
+.card-footer img {
     width: 2.5rem;
     height: 2.5rem;
     border-radius: 50%;
     border: 0.2rem solid black;
 }
 
- .main_container .card-footer a{
+.main_container .card-footer a {
     background: black;
     padding: 10px;
     border-radius: 20px;
@@ -130,7 +130,7 @@ img{
     text-decoration: none;
 }
 
- .card-footer a:hover{
+.card-footer a:hover {
     transform: scale(1.05);
     background: white;
     color: black;
@@ -138,7 +138,7 @@ img{
 
 }
 
- .empty-msg{
+.empty-msg {
     width: 100%;
     text-align: center;
     font-size: 2rem;
